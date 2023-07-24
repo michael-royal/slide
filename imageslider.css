@@ -1,0 +1,369 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+body{
+  animation-name: space;
+  animation-timing-function: ease;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+background: radial-gradient(black,rgb(12, 12, 12), rgb(14, 11, 11));
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+@font-face {
+  font-family:Aventi ;
+  src: url(' AventiBold.ttf');
+}
+
+
+@font-face {
+  font-family:Glitch ;
+  src: url(' CholesterolGlitch-1GzmL.otf');
+}
+
+@font-face {
+  font-family:Glitch1 ;
+  src: url(' SonOfAGlitchItalic-KDlW.ttf');
+}
+
+@font-face {
+  font-family:Glitch3 ;
+  src: url(' ThoseglitchRegular-Ea28l.otf');
+}
+
+header{
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  border-bottom: solid 3px blue;
+  border-bottom-left-radius: 10px;
+  background-color: lightblue;
+  border-bottom-right-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  /* position: fixed;
+  left: 0;
+  right: 0; */
+}
+
+header h1{
+  margin-right: 10%;
+}
+
+
+h1{
+   font-family: Glitch3;
+   color: transparent;
+   font-size: 40px;
+   background: radial-gradient(purple, blue, purple, blue);
+   background-position: 0 0;
+   -webkit-background-clip: text;
+   animation-name: space;
+   animation-timing-function: ease;
+   animation-duration: 40s;
+   animation-iteration-count: infinite;
+}
+
+@keyframes space{
+  100%{
+    background-position: 0 1000px;
+  }
+}
+
+nav ul {
+  width: 1000px;
+  text-align: center;
+  /* background: blue; */
+  padding: 10px;
+  display: flex;
+  font-size: 30px;
+  font-family: Glitch;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  transition: 0.5s;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: purple;
+  transition: 0.5s;
+}
+
+@media(max-width:760px){
+  nav ul{
+    display: grid;
+    position: absolute;
+    width: 200px;
+    text-align: center;
+    background: lightblue;
+    border: solid 2px blue;
+    margin-top: 34px;
+    margin-left: 500px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+  }
+  .dext{
+    margin-left: -100px;
+  }
+
+  nav ul li{
+    margin: 10px;
+  }
+}
+#ax{
+  position: fixed;
+  background:lightblue;
+  border: 3px solid blue;
+  border-radius: 50%;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  top: 5px;
+  right: 0;
+  margin-right: 20px;
+}
+#ax h1{
+  font-size: 25px;
+  
+  font-family: Glitch1;
+}
+
+.arrows{
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  padding: 10px;
+  color: purple;
+  font-weight: bolder;
+  border-radius: 50%;
+  top: 65%;
+  margin-top: -50px;
+  width: 40px;
+  height: 40px;
+  /* border-style: solid; */
+  background-color: white;
+  /* width: 30px; */
+}
+
+
+#rightarrow{
+  /* border-radius: 30px 40px 30px 0; */
+  border-color: transparent #fff transparent transparent;
+  right: 0;
+  margin-right: 100px;
+}
+#leftarrow{
+  /* border-radius: 30px 40px 30px 0; */
+  border-color: transparent #fff transparent transparent;
+  left: 0;
+  margin-left: 100px;
+}
+
+nav ul li a:hover{
+text-decoration:line;
+  color: blue;
+}
+
+nav ul li:hover{
+  border-bottom: solid 3px blue;
+}
+#active{
+  text-decoration: line;
+  color: blue;
+}
+
+.images{
+  width: 100%;
+  height: 90vh;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+  border-radius: 15px;
+
+
+}
+.container{
+  width: 90%;
+  height: 90vh;
+  border-radius: 20px;
+  border: double 5px blue;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+@media (max-width:760px){
+  .container{
+    width: 100%;
+    height: 30vh;
+    border-radius: 20px;
+    border: double 5px blue;
+    margin-top: 5%;
+    margin-bottom: 1%;
+  }
+
+  .images{
+    width: 100%;
+    height: 30vh;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+
+  }
+
+
+  .arrows{
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    padding: 10px;
+    color: purple;
+    font-weight: bolder;
+    border-radius: 50%;
+    top: 25%;
+    margin-top: -50px;
+    width: 40px;
+    height: 40px;
+    /* border-style: solid; */
+    background-color: white;
+    /* width: 30px; */
+  }
+
+  #rightarrow{
+    /* border-radius: 30px 40px 30px 0; */
+    border-color: transparent #fff transparent transparent;
+    right: 0;
+    margin-right: 20px;
+  }
+  #leftarrow{
+    /* border-radius: 30px 40px 30px 0; */
+    border-color: transparent #fff transparent transparent;
+    left: 0;
+    margin-left: 20px;
+  }
+}
+
+
+
+
+
+.img1{background-image: url(' wallpapers/2560x1080-px-fantasy-art-painting-ultra-wide-anime-naruto-hd-art-wallpaper-preview.jpg');}
+.img2{background-image: url(' wallpapers/4k-programming-black-coding-screen-1x5zj2wiqx6spcu2.webp');}
+.img3{background-image: url(' wallpapers/5bd334f8d938f-wallpaper-preview.jpg');}
+.img4{background-image: url(' wallpapers/abstract-digital-art-minimalism-simple-background-wallpaper-preview.jpg');}
+.img5{background-image: url(' wallpapers/5bd3bf79d9458-wallpaper-preview.jpg');}
+.img6{background-image: url(' wallpapers/abstract-nature-dark-red-wallpaper-preview.jpg');}
+.img7{background-image: url(' wallpapers/abstract-php-c-analytics.jpg');}
+.img8{background-image: url(' wallpapers/abstract-technology-design-wallpaper-preview.jpg');}
+.img9{background-image: url(' wallpapers/animals-black-digital-graphic-wallpaper-preview.jpg');}
+.img10{background-image: url(' wallpapers/anime-anime-boys-jujutsu-kaisen-yuji-itadori-sakuna-hd-wallpaper-preview.jpg');}
+.img11{background-image: url(' wallpapers/anime-anime-boys-shingeki-no-kyojin-blood-wallpaper-preview.jpg');}
+.img12{background-image: url(' wallpapers/anime-anime-girls-fate-grand-order-sakura-saber-wallpaper-preview.jpg');}
+.img13{background-image: url(' wallpapers/world-of-warcraft-battle-for-azeroth-video-games-warcraft-alliance-wallpaper-preview.jpg');}
+.img14{background-image: url(' wallpapers/wlop-artwork-women-digital-art-wallpaper-preview.jpg');}
+.img15{background-image: url(' wallpapers/wallpaperflare.com_wallpaper\ \(1\).jpg');}
+.img16{background-image: url(' wallpapers/uchiha-sasuke-sharingan-clothes-mantle-susanoo-character-hd-wallpaper-preview.jpg');}
+.img17{background-image: url(' wallpapers/uchiha-sasuke-rinnegan-eternal-mangekyou-sharingan-naruto-shippuuden-wallpaper-preview.jpg');}
+.img18{background-image: url(' wallpapers/uchiha-madara-naruto-shippuuden-wallpaper-preview.jpg');}
+.img19{background-image: url(' wallpapers/uchiha-itachi-naruto-anime-uchiha-sasuke-wallpaper-preview.jpg');}
+.img20{background-image: url(' wallpapers/tropical-palm-tree-beach-ocean-sunlight-island-hd-wallpaper-preview.jpg');}
+.img21{background-image: url(' wallpapers/tropical-fishes-underwater-coral-reef-ocean-wallpaper-preview.jpg');}
+.img22{background-image: url(' wallpapers/tron-movies-tron-legacy-wallpaper-preview.jpg');}
+.img23{background-image: url(' wallpapers/thumbbig-764254.webp');}
+.img24{background-image: url(' wallpapers/thumbbig-749966.webp');}
+.img25{background-image: url(' wallpapers/thumbbig-682883.webp');}
+.img26{background-image: url(' wallpapers/thumbbig-681016.webp');}
+.img27{background-image: url(' wallpapers/thumbbig-677543.webp');}
+.img28{background-image: url(' wallpapers/thumbbig-659627.webp');}
+.img29{background-image: url(' wallpapers/thumbbig-632051.webp');}
+.img30{background-image: url(' wallpapers/thumbbig-545905.webp');}
+.img31{background-image: url(' wallpapers/thumbbig-532559.webp');}
+.img32{background-image: url(' wallpapers/thumbbig-1322308.webp');}
+.img33{background-image: url(' wallpapers/thumbbig-1320330.webp');}
+.img34{background-image: url(' wallpapers/thumbbig-1320328.webp');}
+.img35{background-image: url(' wallpapers/thumbbig-1319305.webp');}
+.img36{background-image: url(' wallpapers/thumbbig-1319293.webp');}
+.img37{background-image: url(' wallpapers/thumbbig-1317019.webp');}
+.img38{background-image: url(' wallpapers/thumbbig-1316383.webp');}
+.img39{background-image: url(' wallpapers/thumbbig-1314707.webp');}
+.img40{background-image: url(' wallpapers/thumbbig-1311951.webp');}
+.img41{background-image: url(' wallpapers/nature-water-beach-cyan-wallpaper-preview.jpg');}
+.img42{background-image: url(' wallpapers/nature-landscape-lake-mountains-wallpaper-preview.jpg');}
+.img43{background-image: url(' wallpapers/nature-landscape-green-lake-wallpaper-preview.jpg');}
+.img44{background-image: url(' wallpapers/nature-landscape-forest-river-wallpaper-preview.jpg');}
+.img45{background-image: url(' wallpapers/naruto-shippuuden-uzumaki-naruto-uchiha-sasuke-rinnegan-wallpaper-preview.jpg');}
+.img46{background-image: url(' wallpapers/material-design-design-minimalist-minimal-wallpaper-preview.jpg');}
+.img47{background-image: url(' wallpapers/minimalism-abstract-digital-art-lines-wallpaper-preview.jpg');}
+.img48{background-image: url(' wallpapers/minimalism-programming-code-wallpaper-preview.jpg');}
+.img49{background-image: url(' wallpapers/minimalism-code-quote-text-wallpaper-preview.jpg');}
+.img50{background-image: url(' wallpapers/mount-scenery-national-park-alberta-banff-national-park-wallpaper-preview.jpg');}
+.img51{background-image: url(' wallpapers/mountains-silhouette-lake-moon-wallpaper-preview.jpg');}
+.img52{background-image: url(' wallpapers/lake-blue-moonlight-moon-wallpaper-preview.jpg');}
+.img53{background-image: url(' wallpapers/landscape-4k-bliss-windows-xp-wallpaper-preview.jpg');}
+.img54{background-image: url(' wallpapers/landscape-nature-lake-trees-wallpaper-preview.jpg');}
+.img55{background-image: url(' wallpapers/landscape-nature-tropical-palm-trees-wallpaper-preview.jpg');}
+.img56{background-image: url(' wallpapers/landscape-nebula-forest-river-wallpaper-preview.jpg');}
+.img57{background-image: url(' wallpapers/life-digital-design-graphic-wallpaper-preview.jpg');}
+.img58{background-image: url(' wallpapers/life-wallpaper-preview.jpg');}
+.img59{background-image: url(' wallpapers/linux-arch-linux-unix-unixporn-wallpaper-preview.jpg');}
+.img60{background-image: url(' wallpapers/little-prince-universe-science-fiction-fantasy-art-wallpaper-preview.jpg');}
+.img61{background-image: url(' wallpapers/kimetsu-no-yaiba-demon-slayer-kimetsu-no-yaiba-giyu-tomioka-kimetsu-no-yaiba-butterfly-blue-eyes-hd-wallpaper-preview.jpg');}
+.img62{background-image: url(' wallpapers/james-webb-space-telescope-carina-nebula-space-telescope-stars-hd-wallpaper-preview.jpg');}
+.img63{background-image: url(' wallpapers/hatake-kakashi-cosplay-men-mist-wallpaper-preview.jpg');}
+.img64{background-image: url(' wallpapers/html-code-programming-periodic-table-wallpaper-preview.jpg');}
+.img65{background-image: url(' wallpapers/game-magic-the-gathering-artistic-earth-wallpaper-preview.jpg');}
+.img66{background-image: url(' wallpapers/dark-souls-iii-wallpaper-preview.jpg');}
+.img67{background-image: url(' wallpapers/demon-slayer-kimetsu-no-yaiba-kimetsu-no-yaiba-tanjirou-kamado-hd-wallpaper-preview.jpg');}
+.img68{background-image: url(' wallpapers/digital-art-candles-lantern-moon-wallpaper-preview.jpg');}
+.img69{background-image: url(' wallpapers/dolomiti-italy-autumn-lago-antorno-landscape-photography-desktop-hd-wallpaper-for-pc-tablet-and-mobile-3840×2400-wallpaper-preview.jpg');}
+.img70{background-image: url(' wallpapers/dragon-ball-son-goku-super-saiyan-dragon-ball-z-wallpaper-preview.jpg');}
+.img71{background-image: url(' wallpapers/dragon-ball-super-son-goku-ultra-instinct-goku-kamehameha-wallpaper-preview.jpg');}
+.img72{background-image: url(' wallpapers/castle-sunlight-landscape-ruin-wallpaper-preview.jpg');}
+.img73{background-image: url(' wallpapers/circuits-minimalism-electronic-abstract-wallpaper-preview.jpg');}
+.img74{background-image: url(' wallpapers/coding-computer-hacker-hacking-wallpaper-preview.jpg');}
+.img75{background-image: url(' wallpapers/computer-laptop-macbook-coding.jpg');}
+.img76{background-image: url(' wallpapers/concept-construction-page-site.jpg');}
+.img77{background-image: url(' wallpapers/beach-sandy-beach-lagoon-tropical-landscape-wallpaper-preview.jpg');}
+.img78{background-image: url(' wallpapers/beach-sea-holiday-waves.jpg');}
+.img79{background-image: url(' wallpapers/beautiful-calm-clouds-dark.jpg');}
+.img80{background-image: url(' wallpapers/black-white-programming-programming-language-python-programming-hd-wallpaper-preview.jpg');}
+.img81{background-image: url(' wallpapers/blue-sea-sea-blue-sky-white-clouds-ocean-scenery-wallpaper-preview.jpg');}
+.img82{background-image: url(' wallpapers/blue-sky-white-clouds-green-grass-trees-desktop-landscape-nature-wallpaper-wallpaper-preview.jpg');}
+.img83{background-image: url(' wallpapers/screen-code-coding-programming.jpg');}
+.img84{background-image: url(' wallpapers/sea-nature-waves-cyan-wallpaper-preview.jpg');}
+.img85{background-image: url(' wallpapers/sea-night-sky-moon-ocean-wallpaper-preview.jpg');}
+.img86{background-image: url(' wallpapers/sea-waves-blue-water-wallpaper-preview.jpg');}
+.img87{background-image: url(' wallpapers/shingeki-no-kyojin-anime-wallpaper-preview.jpg');}
+.img88{background-image: url(' wallpapers/shingeki-no-kyojin-eren-jaeger-transform-attack-on-titan-wallpaper-preview.jpg');}
+.img89{background-image: url(' wallpapers/shingeki-no-kyojin-mikasa-ackerman-levi-ackerman-levi-rivaille-wallpaper-preview.jpg');}
+.img90{background-image: url(' wallpapers/simple-background-nature-mountains-landscape-wallpaper-preview.jpg');}
+.img91{background-image: url(' wallpapers/simple-simple-background-minimalism-black-background-wallpaper-preview.jpg');}
+.img92{background-image: url(' wallpapers/space-art-fantasy-art-sky-clouds-wallpaper-preview.jpg');}
+.img93{background-image: url(' wallpapers/space-earth-sun-solar-system-wallpaper-preview.jpg');}
+.img94{background-image: url(' wallpapers/star-light-space-design-wallpaper-preview.jpg');}
+.img95{background-image: url(' wallpapers/star-space-celestial-body-light-wallpaper-preview.jpg');}
+.img96{background-image: url(' wallpapers/stars-mountains-nebula-landscape-wallpaper-preview.jpg');}
+.img97{background-image: url(' wallpapers/structure-triangle-light-line-wallpaper-preview.jpg');}
+.img98{background-image: url(' wallpapers/sunset-abstract-moon-science-fiction-wallpaper-preview.jpg');}
+.img99{background-image: url(' wallpapers/sword-blood-anime-ken-wallpaper-preview.jpg');}
+.img100{background-image: url(' wallpapers/technics-design-data-wallpaper-preview.jpg');}
